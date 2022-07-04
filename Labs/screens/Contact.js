@@ -55,8 +55,8 @@ export const Contact = ({navigation, route}) => {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}> Send your message </Text>
-            <TextInput label="Name"
+            <Text style={styles.title}> Send us a message ! </Text>
+            <TextInput label="Enter your name here"
                        style={styles.textInput}
                        type={'outlined'}
                        value={contactInfo.name}
@@ -67,7 +67,7 @@ export const Contact = ({navigation, route}) => {
                                name: text,
                            })}
             />
-            <TextInput label="Phone"
+            <TextInput label="Enter phone number here"
                        style={{...styles.textInput, ...{height: 30}}}
                        type={'outlined'}
                        value={contactInfo.phone}
@@ -81,7 +81,7 @@ export const Contact = ({navigation, route}) => {
                                phone: text,
                            })}
             />
-            <TextInput label="Message"
+            <TextInput label="Enter your message"
                        style={{...styles.textInput, ...{height: 80}}}
                        type={'outlined'}
                        value={contactInfo.message}

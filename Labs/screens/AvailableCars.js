@@ -8,7 +8,7 @@ import Car from "../components/Car";
 import {styles as mainStyles} from "../constants/styles";
 import colors from "../constants/colors";
 
-import desert from '../assets/desert.png'
+import tesla from '../assets/Tesla.jpg'
 
 let AvailableCars = ({navigation}) => {
     let [cars, setCars] = useState([])
@@ -50,8 +50,8 @@ let AvailableCars = ({navigation}) => {
     let noCarsAvailable = () => {
         return (
             <View style={styles.emptyWrapper}>
-                <Image style={styles.emptyImage} source={desert} />
-                <Text style={styles.emptyViewText}>No cars yet</Text>
+                <Image style={styles.emptyImage} source={tesla} />
+                <Text style={styles.emptyViewText}>No cars added </Text>
             </View>
         )
     }
